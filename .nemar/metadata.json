@@ -1,28 +1,76 @@
 {
   "version": "2.0",
-  "dataset_id": "on004519",
-  "source": "openneuro",
-  "source_id": "ds004519",
+  "pipeline_stage": "validated",
   "title": "Internal selective attention is delayed by competition between endogenous and exogenous factors",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Edward Ester": {},
     "Asal Nouri": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004519.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004519",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004519",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2022.07.05.498906",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This dataset contains preprocessed EEG data investigating the temporal dynamics of internal selective attention and the competition between endogenous and exogenous attentional factors. The study examines how internal attention processes are modulated by competing bottom-up and top-down mechanisms. Behavioral summary files (_behavSummary.mat) are provided for alignment with EEG recordings to facilitate integrated analysis of neural and behavioral measures. Analysis scripts are available at https://osf.io/wat6d/. For questions, contact the corresponding author at eester@unr.edu.",
+  "methods_description": "EEG data were collected and preprocessed according to BIDS standards (BIDSVersion 1.8.0, HEDVersion 8.1.0). Preprocessed data are archived in BIDS format (.set files). Behavioral summary data (_behavSummary.mat files) are provided for alignment with EEG recordings to facilitate integrated analysis of neural and behavioral measures. Note: The .set and .mat files contain identical data; analysis scripts originally developed for .mat files can be adapted to work with the BIDS .set files.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "selective attention"
+    },
+    {
+      "term": "endogenous attention"
+    },
+    {
+      "term": "exogenous attention"
+    },
+    {
+      "term": "attention competition"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "preprocessed data"
+    },
+    {
+      "term": "BIDS"
+    }
+  ],
+  "source_hash": "e0a5e9698802d7bb6b80fb9b1b0ce7bf2359875a3731b9f7546872c75b4bc35b"
 }
