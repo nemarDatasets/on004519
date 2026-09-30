@@ -2,7 +2,7 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Internal selective attention is delayed by competition between endogenous and exogenous factors",
-  "description": "This dataset contains preprocessed EEG data from a study investigating how internal selective attention is modulated by competition between endogenous and exogenous attentional factors. The study examines the temporal dynamics of attention allocation during tasks involving competing internal goals and external stimuli. Preprocessed data are provided in BIDS format alongside behavioral summary files for integrated analysis.",
+  "description": "This dataset contains preprocessed EEG data from a study of internal selective attention, examining how competition between endogenous and exogenous factors delays the deployment of attention to internal (working memory) representations. Data are provided in BIDS format as .set files with accompanying behavioral summary files for alignment with the EEG.",
   "methods_description": "EEG data were collected and preprocessed, with results provided in BIDS-compliant .set format. Behavioral summary data (.mat files) are included for alignment with EEG recordings to enable integrated analysis of neural and behavioral measures.",
   "license": "CC0",
   "dataset_type": "raw",
@@ -15,29 +15,23 @@
       "term": "EEG"
     },
     {
-      "term": "selective attention"
+      "term": "Attention",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
     },
     {
-      "term": "endogenous attention"
+      "term": "internal selective attention"
     },
     {
-      "term": "exogenous attention"
+      "term": "working memory"
     },
     {
-      "term": "attention competition"
-    },
-    {
-      "term": "preprocessed data"
+      "term": "endogenous and exogenous attention"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004519",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004519",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -50,6 +44,11 @@
       "identifier": "10.18112/openneuro.ds004519.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004519",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -57,7 +56,7 @@
     "eeg"
   ],
   "sizes": [
-    "13.5 GB (81 files)"
+    "12.55 GB (81 files)"
   ],
   "formats": [
     ".fdt",
